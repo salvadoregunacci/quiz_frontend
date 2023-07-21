@@ -1,0 +1,64 @@
+.field {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.field_placeholder {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: .3s;
+  background: #fff;
+  color: #9f9f9f;
+}
+
+.err_field {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+
+input {
+  padding: 12px 45px 12px 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+
+  &:focus {
+    border: 1px solid #94ff3d;
+    outline: 1px solid #94ff3d;
+  }
+}
+
+.focus {
+  .field_placeholder {
+    padding: 2px 3px;
+    font-size: 12px;
+    transform: translateY(-160%) translateX(-10px);
+  }
+}
+
+.active {
+  .field_placeholder {
+    color: #8df33a;
+  }
+}
+
+.field__visible_handler {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-40%);
+  cursor: pointer;
+
+  img {
+    max-width: 25px;
+    width: 100%;
+  }
+}

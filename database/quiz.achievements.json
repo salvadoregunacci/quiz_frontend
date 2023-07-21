@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "64ac4b11a8a3fafdf2dd976f"
+  },
+  "title": "Начало пути",
+  "preview": "http://localhost:4444/public/images/achievements/first_quiz.webp",
+  "desc": "Выполнить первый квиз"
+},
+{
+  "_id": {
+    "$oid": "64ad87d698a266b18eeabfbc"
+  },
+  "title": "Мастер маникюра",
+  "preview": "http://localhost:4444/public/images/achievements/master_manicure.webp",
+  "desc": "Ответить на все вопросы в категории \"Маникюр\""
+},
+{
+  "_id": {
+    "$oid": "64ada87d98a266b18eeabfc1"
+  },
+  "title": "Веб-разработчик",
+  "preview": "http://localhost:4444/public/images/achievements/web_developer.webp",
+  "desc": "Ответить на все вопросы в категории \"Веб-разработка\""
+},
+{
+  "_id": {
+    "$oid": "64adab2d98a266b18eeabfc4"
+  },
+  "title": "Разработчик игр на Unity",
+  "preview": "http://localhost:4444/public/images/achievements/game_developer.webp",
+  "desc": "Ответить на все вопросы в категории \"Разработка игр\""
+},
+{
+  "_id": {
+    "$oid": "64adae2598a266b18eeabfc8"
+  },
+  "title": "Храбрый рыцарь",
+  "preview": "http://localhost:4444/public/images/achievements/main_knight.webp",
+  "desc": "Ответить на все вопросы в категории \"Rise of Empire\""
+},
+{
+  "_id": {
+    "$oid": "64ae7b4ee7484a06fed705a9"
+  },
+  "title": "Мастер 3d моделирования",
+  "preview": "http://localhost:4444/public/images/achievements/3d_model.webp",
+  "desc": "Ответить на все вопросы в категории \"3d моделирование\""
+},
+{
+  "_id": {
+    "$oid": "64ae8336e7484a06fed705ae"
+  },
+  "title": "Эсс, минус 3",
+  "preview": "http://localhost:4444/public/images/achievements/three_quiz.webp",
+  "desc": "Успешно закончить 3 квиза"
+},
+{
+  "_id": {
+    "$oid": "64aea031e7484a06fed705b9"
+  },
+  "title": "Киноман",
+  "preview": "http://localhost:4444/public/images/achievements/films.webp",
+  "desc": "Ответить на все вопросы в категории \"Фильмы\""
+},
+{
+  "_id": {
+    "$oid": "64af0718e7484a06fed705c2"
+  },
+  "title": "Варщик",
+  "preview": "http://localhost:4444/public/images/achievements/breaking_bad.webp",
+  "desc": "Ответить на все вопросы в категории \"Во все тяжкие\""
+},
+{
+  "_id": {
+    "$oid": "64afabcb37d7175667c3f241"
+  },
+  "title": "Рэп-звезда",
+  "preview": "http://localhost:4444/public/images/achievements/rap.webp",
+  "desc": "Ответить на все вопросы в категории \"Рэп\""
+},
+{
+  "_id": {
+    "$oid": "64afbc3037d7175667c3f246"
+  },
+  "title": "Дай 5",
+  "preview": "http://localhost:4444/public/images/achievements/five_quiz.webp",
+  "desc": "Успешно закончить 5 квизов"
+},
+{
+  "_id": {
+    "$oid": "64afbd1637d7175667c3f247"
+  },
+  "title": "Главный по визуалу",
+  "preview": "http://localhost:4444/public/images/achievements/design.webp",
+  "desc": "Ответить на все вопросы в категории \"Дизайн\""
+},
+{
+  "_id": {
+    "$oid": "64afcc8c37d7175667c3f24c"
+  },
+  "title": "Первопроходец",
+  "preview": "http://localhost:4444/public/images/achievements/geo.webp",
+  "desc": "Ответить на все вопросы в категории \"География\""
+},
+{
+  "_id": {
+    "$oid": "64b13457875e83e4c31dedda"
+  },
+  "title": "Верный друг",
+  "preview": "http://localhost:4444/public/images/achievements/first_pet.webp",
+  "desc": "Купить первого питомца"
+},
+{
+  "_id": {
+    "$oid": "64b5615bb8b0117811e4adae"
+  },
+  "title": "Волк с Уолл-стрит",
+  "preview": "http://localhost:4444/public/images/achievements/moneys.webp",
+  "desc": "Ответить на все вопросы в категории \"Деньги\""
+},
+{
+  "_id": {
+    "$oid": "64b562aab8b0117811e4adb1"
+  },
+  "title": "Главный в танке",
+  "preview": "http://localhost:4444/public/images/achievements/wot.webp",
+  "desc": "Ответить на все вопросы в категории \"World of Tanks\""
+},
+{
+  "_id": {
+    "$oid": "64b569bdb8b0117811e4adb4"
+  },
+  "title": "Гик",
+  "preview": "http://localhost:4444/public/images/achievements/pc.webp",
+  "desc": "Ответить на все вопросы в категории \"Компьютер\""
+},
+{
+  "_id": {
+    "$oid": "64b576cbb8b0117811e4adb7"
+  },
+  "title": "Компаньон",
+  "preview": "http://localhost:4444/public/images/achievements/three_pets.webp",
+  "desc": "Купить троих питомцев"
+}]

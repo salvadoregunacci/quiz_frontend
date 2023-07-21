@@ -1,0 +1,228 @@
+.rating {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.rating__content {
+  animation: fadeFromTop .3s ease-in-out forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating__items {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.rating__content_title {
+  all: unset;
+  font-family: "Monserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.rating__item:not(:first-child) {
+  margin-top: 15px;
+}
+
+.rating__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.rating__item_count {
+  font-family: "Monserrat", sans-serif;
+  width: 65px;
+  height: 80px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+}
+
+.rating__item_content {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  height: 80px;
+  margin-left: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.rating__item_wrap {
+  margin-left: 25px;
+}
+
+.rating__item_name {
+  font-family: "Monserrat", sans-serif;
+  color: var(--red);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.rating__item_total {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.rating__item_total_wrap {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+
+  img {
+    max-width: 15px;
+  }
+}
+
+.rating__item[data-count="1"] {
+  .rating__item_content, .rating__item_count {
+    border-color: rgba(255, 216, 17, 0.49);
+    background: rgba(255, 242, 41, 0.22);
+  }
+
+  .rating__item_medal {
+    max-width: 50px;
+  }
+}
+
+.rating__item[data-count="2"] {
+  .rating__item_content, .rating__item_count {
+    border-color: #ceeffd;
+    background: rgba(206, 239, 253, 0.25);
+  }
+}
+
+.rating__item[data-count="3"] {
+  .rating__item_content, .rating__item_count {
+    border-color: rgba(255, 174, 118, 0.25);
+    background: rgba(255, 174, 118, 0.08);
+  }
+}
+
+.rating__item_medal {
+  max-width: 45px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+.rating__item.you {
+  &::after {
+    content: "Вы";
+    width: 34px;
+    height: 34px;
+    background: var(--gold);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+    font-size: 14px;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    transform: translate(-30%, -10%);
+    font-weight: 700;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 800px) {
+  .rating__content_title {
+    font-size: 20px;
+  }
+
+  .rating__item_name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .rating__content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .rating__items {
+    box-sizing: border-box;
+  }
+
+  .rating .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .rating {
+    padding-top: 25px;
+  }
+
+  .rating__item_count {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: #f6f6f6;
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    color: #4d4d4d;
+  }
+
+  .rating__item_medal {
+    right: 6px;
+  }
+
+  .rating__items {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  .rating__item_medal {
+    right: 0;
+    transform: translateX(40%) rotate(10deg);
+    max-width: 35px;
+  }
+}
+
+@media (max-width: 350px) {
+  .rating__item_wrap {
+    margin-left: 15px;
+  }
+
+  .rating {
+    .user_avatar {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

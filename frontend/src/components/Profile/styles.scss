@@ -1,0 +1,751 @@
+.profile {
+  padding-bottom: 150px;
+
+  .container {
+    display: flex;
+    padding-top: 50px;
+    column-gap: 25px;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.profile_sidebar {
+  background: #fff;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 25px;
+  max-width: 250px;
+  width: 100%;
+  height: 645px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  animation: fadeOpacity .3s ease-in-out forwards;
+}
+
+.profile_content {
+  width: 100%;
+  height: 100%;
+  animation: fadeOpacity .3s ease-in-out forwards;
+}
+
+.profile_sidebar__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 25px;
+}
+
+.profile_block {
+  box-sizing: border-box;
+}
+
+.profile_block__balance {
+  height: auto;
+}
+
+.profile_balance_row {
+  display: flex;
+  align-items: center;
+}
+
+.profile_balance_info {
+  img {
+    max-width: 25px;
+  }
+
+  .tooltip__content {
+    font-size: 12px;
+
+    a {
+      color: var(--red);
+    }
+  }
+}
+
+.profile_block:not(:first-child) {
+  margin-top: 15px;
+}
+
+.profile_username {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.profile_email {
+  font-size: 14px;
+}
+
+.profile__title {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+}
+
+.profile_wrap {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 25px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.profile_balance_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+
+  img {
+    max-width: 50px;
+  }
+
+  a {
+    color: var(--gold);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .profile_info_icon {
+    max-width: 30px;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .tooltip__content_wrap {
+    font-size: 14px;
+    min-width: 220px;
+  }
+}
+
+.profile_balance {
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--gold);
+  font-weight: 700;
+
+  span {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.profile_achievements_wrap {
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.profile_no_achievements_title {
+  color: var(--black);
+  font-size: 14px;
+
+  a {
+    color: var(--red);
+  }
+}
+
+@keyframes fadeOpacity {
+  0% {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.profile_achievement_tooltip {
+  box-sizing: border-box;
+  height: 100%;
+  transition: .3s;
+  position: relative;
+  z-index: 1;
+
+  .tooltip__content_wrap {
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  &:hover {
+    .achievement img {
+      transform: translateY(-5px);
+    }
+  }
+
+  .tooltip__header {
+    height: 160px;
+    box-sizing: border-box;
+    z-index: 4;
+  }
+
+  .tooltip__content {
+    padding: 5px 10px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.profile_achievement_tooltip.active {
+  z-index: 999;
+
+  .tooltip__content_wrap {
+    z-index: 999;
+  }
+}
+
+.profile_shop_link {
+  margin-right: 10px;
+  text-decoration: none;
+  border-right: 1px solid #a79fff;
+  padding-right: 30px;
+}
+
+.profile_menu_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.profile_pets_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  .tooltip {
+    max-width: 22.5%;
+    width: 100%;
+  }
+
+  .tooltip__header {
+    text-align: center;
+  }
+
+  .tooltip__content_wrap {
+    min-width: 200px;
+    font-size: 12px;
+  }
+}
+
+.pet_card {
+  height: 200px;
+  border-radius: 14px;
+  background: #f8f8f8;
+  border: 1px solid #eeeeee;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
+
+  .pet_card__img {
+    transition: .3s;
+  }
+
+  &:hover {
+    .pet_card__img {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.pet_card__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.pet_card__img {
+  max-width: 160px;
+}
+
+.profile_to_main_btn {
+  text-decoration: none;
+  color: #fff;
+  transition: .2s;
+
+  &:hover {
+    color: var(--gold);
+  }
+}
+
+.profile_shop_menu_btn {
+  padding-right: 0;
+  border: none;
+}
+
+.profile_navigation {
+  display: flex;
+  align-items: center;
+}
+
+.profile_logout_btn {
+  margin-top: 15px;
+}
+
+.profile_logout_btn:first-child {
+  margin-top: 25px;
+}
+
+.profile_controll_buttons {
+  .btn_default {
+    font-size: 14px;
+  }
+}
+
+.confirm_reset_account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 15px;
+
+  h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  p {
+    all: unset;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fc5252;
+  }
+
+  .confirm_reset_account__img {
+    max-width: 80px;
+    margin-top: 15px;
+  }
+}
+
+.profile_img_form__wrap {
+  position: relative;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green);
+  border: 1px solid #dedede;
+
+  &:hover {
+    .profile_img_form__label {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  .default_img {
+    padding: 10px;
+  }
+
+  .profile_img {
+    display: inline-block;
+    width: 140%;
+  }
+}
+
+.profile_img_form__label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.65);
+  height: 35%;
+  width: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s;
+
+  svg {
+    transform: translateX(-5px);
+  }
+}
+
+@media (hover) {
+  .profile_img_form__label {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+#profile_img_form__input {
+  display: none;
+}
+
+.profile_img_form__btn {
+  all: unset;
+  font-size: 12px;
+  background: var(--green);
+  padding: 3px 6px;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+  display: none;
+
+  &:hover {
+    background: #86f12f;
+  }
+}
+
+.profile_img_form {
+  all: unset;
+}
+
+.profile_img_form.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6px;
+
+  .profile_img_form__btn {
+    display: flex;
+  }
+}
+
+.profile_rating_wrap {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #ececec;
+  padding-top: 25px;
+  width: 100%;
+}
+
+.profile_rating__img {
+  max-width: 45px;
+}
+
+.profile_rating__subtitle {
+  font-size: 12px;
+}
+
+.profile_rating__title {
+  font-size: 18px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.profile_user__info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.profile_rating_row {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.profile_sidebar__info_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile_img_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1125px) {
+  .profile .container {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+
+  .profile_sidebar__info_row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile_user__info {
+    margin-top: 0;
+  }
+
+  .profile_sidebar__info {
+    flex-direction: row;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .profile_sidebar {
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 25px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .profile_rating_wrap {
+    padding-top: 0;
+    margin-top: 0;
+    border: none;
+  }
+
+  .profile_logout_btn:first-child {
+    margin-top: 0;
+  }
+
+  .profile_user__info {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .profile_rating_wrap {
+    margin-left: 50px;
+  }
+
+  .profile_controll_buttons {
+    max-width: 180px;
+  }
+
+  .profile_rating_row {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .profile_rating_wrap {
+    text-align: left;
+    flex-direction: row;
+  }
+
+  .profile_rating__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .profile .achievement {
+    max-width: 180px;
+  }
+
+  .profile_achievements_wrap {
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .profile_no_achievements_title {
+    width: 100%;
+  }
+
+  .profile_wrap {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 935px) {
+  .profile_shop_link {
+    border: none;
+    padding-right: 0;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .profile_shop_menu_btn {
+    max-width: none;
+    width: 100%;
+
+    .btn_default {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .profile_pets_wrap {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .profile_pets_wrap .tooltip {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile_rating_wrap {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 25px;
+  }
+
+  .profile_rating_row {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 665px) {
+  .profile_sidebar__info {
+    flex-direction: column;
+  }
+
+  .profile_rating_wrap {
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .profile_rating_row {
+    text-align: left;
+    margin-left: 15px;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+  }
+}
+
+@media (max-width: 655px) {
+  .profile {
+    .achievement img {
+      max-width: 60px;
+    }
+
+    .achievement {
+      width: 150px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .profile {
+    .achievement {
+      max-width: none;
+      width: 100%;
+    }
+
+    .achievement img {
+      max-width: 80px;
+    }
+  }
+
+  .profile_achievements_wrap {
+    gap: 10px;
+
+    .tooltip {
+      width: 45%;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .profile_pets_wrap {
+    gap: 25px;
+  }
+
+  .profile_pets_wrap .tooltip {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 490px) {
+  .profile_pets_wrap {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .profile_pets_wrap .tooltip {
+    max-width: 160px;
+  }
+
+  .profile_sidebar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profile_controll_buttons {
+    margin-top: 25px;
+    max-width: none;
+    display: flex;
+    column-gap: 15px;
+
+  }
+
+  .profile_logout_btn {
+    margin-top: 0;
+  }
+
+  .profile_rating_wrap {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 460px) {
+  .profile {
+    .achievement img {
+      max-width: 60px;
+    }
+
+    .achievement_title {
+      font-size: 12px;
+    }
+  }
+
+  .profile_achievements_wrap {
+    padding: 15px 0;
+    box-sizing: border-box;
+  }
+
+  .profile_no_achievements_title_1 {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile_pets_wrap {
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .profile_pets_wrap .tooltip {
+    max-width: 100%;
+  }
+
+  .profile_no_achievements_title_1 {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 390px) {
+  .profile_sidebar {
+    align-items: flex-start;
+  }
+
+  .profile_controll_buttons {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+  }
+
+}
+
+

@@ -1,0 +1,183 @@
+[{
+  "_id": {
+    "$oid": "64a689a6a989019c682eff12"
+  },
+  "title": "Веб-разработка",
+  "preview": "http://localhost:4444/public/images/1688644648655-prog.webp",
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64a695a3d7baf415d7c30368"
+  },
+  "title": "Разработка игр",
+  "preview": "http://localhost:4444/public/images/1688638883428-gamedev.webp",
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64ad7bf7661590d74bded3c3"
+  },
+  "title": "The Rise of Empire",
+  "preview": "http://localhost:4444/public/images/1689091063803-fort.webp",
+  "createdAt": {
+    "$date": "2023-07-11T15:57:43.808Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-11T15:57:43.808Z"
+  },
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64ad81f6661590d74bded452"
+  },
+  "title": "Маникюр",
+  "preview": "http://localhost:4444/public/images/1689092598883-manicure.webp",
+  "createdAt": {
+    "$date": "2023-07-11T16:23:18.885Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-11T16:23:18.885Z"
+  },
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64ae7c9fad3387121424a967"
+  },
+  "title": "3D моделирование",
+  "preview": "http://localhost:4444/public/images/1689156767310-3d-model.webp",
+  "createdAt": {
+    "$date": "2023-07-12T10:12:47.316Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-12T10:12:47.316Z"
+  },
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64aea0efc5879f6d49391204"
+  },
+  "title": "Фильмы",
+  "preview": "http://localhost:4444/public/images/1689166063640-films.webp",
+  "createdAt": {
+    "$date": "2023-07-12T12:47:43.645Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-12T12:47:43.645Z"
+  },
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64aefeebc5879f6d493916f8"
+  },
+  "title": "Во все тяжкие",
+  "preview": "http://localhost:4444/public/images/1689190123398-breaking_bad.webp",
+  "createdAt": {
+    "$date": "2023-07-12T19:28:43.400Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-12T19:28:43.400Z"
+  },
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64afab1b5a852bb98d2afecc"
+  },
+  "title": "Рэп",
+  "preview": "http://localhost:4444/public/images/1689234203280-rap.webp",
+  "createdAt": {
+    "$date": "2023-07-13T07:43:23.282Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-13T07:43:23.282Z"
+  },
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64afb9545a852bb98d2b00a5"
+  },
+  "title": "Дизайн",
+  "preview": "http://localhost:4444/public/images/1689237844730-design.webp",
+  "createdAt": {
+    "$date": "2023-07-13T08:44:04.731Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-13T08:44:04.731Z"
+  },
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64afc8025a852bb98d2b0300"
+  },
+  "title": "География",
+  "preview": "http://localhost:4444/public/images/1689241602959-geo.webp",
+  "createdAt": {
+    "$date": "2023-07-13T09:46:42.960Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-13T09:46:42.960Z"
+  },
+  "__v": 0,
+  "private": false
+},
+{
+  "_id": {
+    "$oid": "64b3c6e7777d0afb3a3abf93"
+  },
+  "title": "Деньги",
+  "preview": "http://localhost:4444/public/images/1689503463053-money.webp",
+  "private": true,
+  "createdAt": {
+    "$date": "2023-07-16T10:31:03.054Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-16T10:31:03.054Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b51bc99f176c3c8535b575"
+  },
+  "title": "World of Tanks",
+  "preview": "http://localhost:4444/public/images/1689590729723-wot.webp",
+  "private": true,
+  "createdAt": {
+    "$date": "2023-07-17T10:45:29.725Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-17T10:45:29.725Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b52d149f176c3c8535b991"
+  },
+  "title": "Компьютер",
+  "preview": "http://localhost:4444/public/images/1689595156814-pc.webp",
+  "private": true,
+  "createdAt": {
+    "$date": "2023-07-17T11:59:16.816Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-17T11:59:16.816Z"
+  },
+  "__v": 0
+}]

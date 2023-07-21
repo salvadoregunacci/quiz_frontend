@@ -1,0 +1,86 @@
+.screen {
+  max-width: 450px;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%) scale(.8);
+  pointer-events: none;
+
+  .content {
+    padding: 40px 20px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
+
+  &::after, &::before {
+    content: "";
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    background: #D3D1E3;
+    border-radius: 16px;
+    left: 50%;
+    transform: translate(-50%, 6px);
+    z-index: 2;
+  }
+
+  &::before {
+    transform: translate(-50%, 12px);
+    background: #867DD3;
+    width: 95%;
+    z-index: 1;
+  }
+}
+
+#start.active, #final.active {
+  text-align: center;
+  animation: finalBlock .4s ease-in-out forwards;
+}
+
+.screen.active {
+  opacity: 1;
+  transform: translate(-50%, -60%) scale(1);
+  pointer-events: auto;
+}
+
+.screen.checked {
+  animation: checked .3s ease-in forwards;
+}
+
+@keyframes checked {
+  from {
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1) scaleX(1);
+  }
+
+  to {
+    pointer-events: none;
+    transform: translate(-50%, 200%) scale(.6) scaleX(0.6);
+  }
+}
+
+@keyframes finalBlock {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%) scale(.6);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -60%) scale(1);
+  }
+}

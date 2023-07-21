@@ -1,0 +1,89 @@
+.dashboard {
+  height: 92vh;
+  overflow-y: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.welcome_img {
+  max-width: 130px;
+}
+
+.dashboard .progress {
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  column-gap: 3px;
+  height: 4px;
+  max-width: 450px;
+  width: 100%;
+}
+
+@keyframes finalBlockCompact {
+  from {
+    opacity: 0;
+    transform: scale(.6);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-height: 715px) {
+  .dashboard {
+    padding-top: 40px;
+  }
+
+  .dashboard .progress {
+    top: 85px;
+    z-index: 4;
+  }
+
+  .dashboard__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #start h3, .screen h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  .dashboard {
+    .step_item {
+      max-width: 40px;
+      width: 100%;
+      min-width: 25px;
+      opacity: .4;
+    }
+
+    .progress {
+      max-width: 90%;
+    }
+
+    .screen {
+      max-width: 90%;
+    }
+
+    .welcome_img {
+      max-width: 115px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  #start h3, .screen h3 {
+    font-size: 18px;
+  }
+}

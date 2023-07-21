@@ -1,0 +1,10 @@
+.step_item {
+  height: 4px;
+  width: 40px;
+  background: lawngreen;
+  opacity: .5;
+}
+
+.step_item.active {
+  opacity: 1;
+}
