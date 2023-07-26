@@ -12,7 +12,6 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "esbuild": "^0.18.17",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
     "jsonwebtoken": "^9.0.0",
@@ -25,9 +24,6 @@
     "build": "esbuild server.js --bundle --platform=node --target=node18 --outdir=dist"
   },
   "devDependencies": {
-    "aws-sdk": "^2.1422.0",
-    "mock-aws-s3": "^4.0.2",
-    "nock": "^13.3.2",
     "nodemon": "^2.0.22"
   }
 }
