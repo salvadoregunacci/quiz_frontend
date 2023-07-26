@@ -1,7 +1,7 @@
 {
   "name": "quiz",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "type": "module",
   "dependencies": {
@@ -16,7 +16,7 @@
     "sharp": "^0.32.3"
   },
   "scripts": {
-    "dev": "nodemon --inspect index.js"
+    "dev": "node server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
