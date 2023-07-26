@@ -20,7 +20,8 @@
     "sharp": "^0.32.3"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+	"build": "vite build"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
