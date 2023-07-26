@@ -16,7 +16,7 @@
     "sharp": "^0.32.3"
   },
   "scripts": {
-    "dev": "node server.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
