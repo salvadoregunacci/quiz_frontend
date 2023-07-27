@@ -201,7 +201,7 @@ const Profile = () => {
                                     <h3 className="profile__title">Баланс:</h3>
                                     <div className="profile_wrap profile_balance_wrap">
                                         <div className="profile_balance_row">
-                                            <img src="/public/images/coins.webp" alt="coins"/>
+                                            <img src="/images/coins.webp" alt="coins"/>
                                             <div className="profile_balance">
                                                 {new Intl.NumberFormat("en-US", {
                                                     useGrouping: true,
