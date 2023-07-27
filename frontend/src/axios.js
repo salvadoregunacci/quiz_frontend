@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: "https://quiz-server-sigma.vercel.app/",
+    baseURL: "https://quiz-backend-production-4bee.up.railway.app/",
 });
 
 const token = window.localStorage.getItem("token");
