@@ -135,7 +135,7 @@ const Profile = () => {
                                               encType="multipart/form-data">
                                             <div className="profile_img_form__wrap">
                                                 <img
-                                                    src={authUser["avatar"] ? authUser["avatar"] : "/public/images/user-default.svg"}
+                                                    src={authUser["avatar"] ? authUser["avatar"] : "/images/user-default.svg"}
                                                     className={`profile_img ${authUser["avatar"] ? "" : "default_img"}`}
                                                     alt="avatar" ref={previewImgRef}/>
 
