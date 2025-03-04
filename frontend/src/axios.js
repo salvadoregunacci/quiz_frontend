@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: "https://quiz-backend-production-4bee.up.railway.app/",
+    baseURL: "https://quiz-backend-gypq.onrender.com",
 });
 
 const token = window.localStorage.getItem("token");
